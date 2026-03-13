@@ -22,3 +22,33 @@ variable "admin_password" {
   sensitive   = true
   default     = "Password1234!"
 }
+
+variable "virtual_network_name" {
+  description = "Name of the existing virtual network."
+  type        = string
+  default     = "tfvmex-network"
+}
+
+variable "subnet_name" {
+  description = "Name of the existing subnet."
+  type        = string
+  default     = "internal"
+}
+
+variable "network_interface_name" {
+  description = "Name of the existing network interface."
+  type        = string
+  default     = "tfvmex-nic"
+}
+
+variable "virtual_machine_name" {
+  description = "Name of the existing virtual machine."
+  type        = string
+  default     = "tfvmex-vm"
+}
+
+variable "public_ip_name" {
+  description = "Name of the existing public IP address attached to the VM."
+  type        = string
+  default     = "tfvmex-public-ip"
+}
